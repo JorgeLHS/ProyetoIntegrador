@@ -20,7 +20,7 @@ public class Myform {
 
 
     private static final String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-    private static final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$";
+    //private static final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$";
     public Myform() {
 
         txtCorreo.addFocusListener(new FocusAdapter() {
@@ -36,10 +36,10 @@ public class Myform {
             @Override
             public void focusLost(FocusEvent e) {
                 String password = String.valueOf(txtContraseña.getPassword());
-                if (!password.equals("") && !password.matches(PASSWORD_PATTERN)) {
+               /* if (!password.equals("") && !password.matches(PASSWORD_PATTERN)) {
                     JOptionPane.showMessageDialog(null, "La contraseña ingresada no es válida. Verificar que la contraseña: \n1. Contenga mayúsculas y minúsculas \n2. Contenga números \n3. Contenga caracteres especiales");
                     txtContraseña.setText("");
-                }
+                }*/
             }
         });
         btnShowInfo.addActionListener(new ActionListener() {
@@ -59,13 +59,22 @@ public class Myform {
                     writer.write(builder.toString());
                     JOptionPane.showMessageDialog(null, "Registro completado exitosamente!");
 
-                    Window window = SwingUtilities.windowForComponent(btnShowInfo);
+                    /*Window window = SwingUtilities.windowForComponent(btnShowInfo);
                     dlgShowInfo = new JDialog(window);
                     dlgShowInfo.setModal(true);
                     dlgShowInfo.add(new JLabel("Nombre del estudiante: " + txtNombre.getText() + " Correo: " +
                             txtCorreo.getText()));
                     dlgShowInfo.pack();
                     dlgShowInfo.setVisible(true);
+                    JFrame secondForm = new JFrame();*/
+
+                    JFrame frame = new JFrame();
+                    frame.setSize(500, 500);
+                    frame.setLayout(new BorderLayout());
+                    frame.setContentPane(new Explicacion().pnlMain2);
+                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame.setVisible(true);
+
                 } catch (
                         FileNotFoundException ex) {
                     JOptionPane.showMessageDialog(null, "El archivo no existe");
