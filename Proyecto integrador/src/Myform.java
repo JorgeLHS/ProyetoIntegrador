@@ -72,12 +72,13 @@ public class Myform extends JPanel{
                     JFrame secondForm = new JFrame();*/
 
                     JFrame frame = new JFrame(txtNombre.getText());
-                    frame.setSize(500, 500);
+                    frame.setSize(800, 800);
                     frame.setLayout(new BorderLayout());
                     frame.setContentPane(new Explicacion().pnlMain2);
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.setVisible(true);
                     frame.setLocationRelativeTo(null);
+
 
                 } catch (
                         FileNotFoundException ex) {

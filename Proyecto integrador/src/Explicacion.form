@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Explicacion">
   <grid id="27dc6" binding="pnlMain2" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+    <margin top="0" left="7" bottom="0" right="8"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="548" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-16748620"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="dbe4a" class="javax.swing.JLabel" binding="lblBienvenido">
@@ -13,6 +15,8 @@
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Bodoni MT Black" size="48"/>
+          <foreground color="-16184824"/>
           <text value="Bienvenido/a"/>
         </properties>
       </component>
@@ -21,9 +25,13 @@
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-8407553"/>
+          <editable value="false"/>
+          <font name="JetBrains Mono" size="18"/>
+          <foreground color="-16184824"/>
           <model>
             <item value="Ordenamiento"/>
-            <item value="Busqueda"/>
+            <item value="Búsqueda"/>
           </model>
         </properties>
       </component>
@@ -32,14 +40,21 @@
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-8407553"/>
+          <font name="JetBrains Mono" size="20"/>
+          <foreground color="-16184824"/>
+          <hideActionText value="false"/>
+          <horizontalTextPosition value="2"/>
           <text value="Entrar"/>
         </properties>
       </component>
-      <component id="a69b3" class="javax.swing.JLabel" binding="lblMensaje">
+      <component id="b1473" class="javax.swing.JLabel" binding="lblMensaje">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Bodoni MT Black" size="48"/>
+          <foreground color="-16777216"/>
           <text value="¿Qué desea aprender?"/>
         </properties>
       </component>
