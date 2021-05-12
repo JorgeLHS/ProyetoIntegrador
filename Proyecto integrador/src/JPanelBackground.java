@@ -8,14 +8,11 @@ import javax.swing.JPanel;
 
     public class JPanelBackground extends JPanel {
 
-        // Atributo que guardara la imagen de Background que le pasemos.
         private Image background;
 
-        // Metodo que es llamado automaticamente por la maquina virtual Java cada vez que repinta
         public void paintComponent(Graphics g) {
 
-		/* Obtenemos el tamaño del panel para hacer que se ajuste a este
-		cada vez que redimensionemos la ventana y se lo pasamos al drawImage */
+
             background = new ImageIcon(getClass().getResource("/imagenes/uno.jpg")).getImage();
 
             g.drawImage(background,0, 0, getWidth(), getHeight(),this);
@@ -25,10 +22,7 @@ import javax.swing.JPanel;
             super.paintComponent(g);
         }
 
-        // Metodo donde le pasaremos la dirección de la imagen a cargar.
         public void setBackground(String imagePath) {
-
-            // Construimos la imagen y se la asignamos al atributo background.
             this.setOpaque(false);
             this.background = new ImageIcon(imagePath).getImage();
             repaint();

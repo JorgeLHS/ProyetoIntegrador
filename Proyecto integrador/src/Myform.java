@@ -71,7 +71,7 @@ public class Myform extends JPanel{
                     dlgShowInfo.setVisible(true);
                     JFrame secondForm = new JFrame();*/
 
-                    JFrame frame = new JFrame();
+                    JFrame frame = new JFrame(txtNombre.getText());
                     frame.setSize(500, 500);
                     frame.setLayout(new BorderLayout());
                     frame.setContentPane(new Explicacion().pnlMain2);
