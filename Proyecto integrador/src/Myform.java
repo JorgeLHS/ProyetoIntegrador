@@ -5,7 +5,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
-public class Myform {
+public class Myform extends JPanel{
+
 
     private JLabel lblCorreo;
     private JTextField txtCorreo;
@@ -21,6 +22,8 @@ public class Myform {
 
     private static final String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
     //private static final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$";
+
+
     public Myform() {
 
         txtCorreo.addFocusListener(new FocusAdapter() {
@@ -74,6 +77,7 @@ public class Myform {
                     frame.setContentPane(new Explicacion().pnlMain2);
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.setVisible(true);
+                    frame.setLocationRelativeTo(null);
 
                 } catch (
                         FileNotFoundException ex) {
