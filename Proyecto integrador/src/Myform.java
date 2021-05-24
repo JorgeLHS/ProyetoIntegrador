@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
-public class Myform extends JPanel{
+public class Myform{
 
 
     private JLabel lblCorreo;
@@ -78,7 +78,6 @@ public class Myform extends JPanel{
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.setVisible(true);
                     frame.setLocationRelativeTo(null);
-
 
                 } catch (
                         FileNotFoundException ex) {

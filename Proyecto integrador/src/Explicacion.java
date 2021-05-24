@@ -20,12 +20,12 @@ public class Explicacion {
                 opcion = (String) cmbox.getSelectedItem();
                 switch (opcion) {
                     case "Ordenamiento":
-                        /*Window window = SwingUtilities.windowForComponent(btnEntrar);
+                        Window window = SwingUtilities.windowForComponent(btnEntrar);
                         dlgShowInfo = new JDialog(window);
                         dlgShowInfo.setModal(true);
                         dlgShowInfo.add(new JLabel("Los métodos de búsqueda son:"));
                         dlgShowInfo.pack();
-                        dlgShowInfo.setVisible(true);*/
+                        dlgShowInfo.setVisible(true);
 
                         break;
                     case "Busqueda":
