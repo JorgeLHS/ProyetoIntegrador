@@ -29,10 +29,10 @@ public class Myform{
         txtCorreo.addFocusListener(new FocusAdapter() {
             @Override
             public void focusLost (FocusEvent e) {
-                if (!txtCorreo.getText().equals("") && !txtCorreo.getText().matches(EMAIL_PATTERN)) {
+               /* if (!txtCorreo.getText().equals("") && !txtCorreo.getText().matches(EMAIL_PATTERN)) {
                     JOptionPane.showMessageDialog(null, "El email ingresado no es válido");
                     txtCorreo.setText("");
-                }
+                }*/
             }
         });
         txtContraseña.addFocusListener(new FocusAdapter() {
