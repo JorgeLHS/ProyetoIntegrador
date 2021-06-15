@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 public class Registro {
     private JTextField txtNombre;
     private JTextField txtApellido;
-    private JTextField txtCorreo;
+    public JTextField txtCorreo;
     private JTextField txtSemestre;
     private JTextField txtCarneU;
     private JLabel lblNombre;
@@ -19,7 +19,7 @@ public class Registro {
     private JLabel lblEmail;
     private JLabel lblSemestre;
     private JLabel lblCarne;
-    private JPasswordField txtContraseña;
+    public JPasswordField txtContraseña;
     private JLabel lblContraseña;
     private JButton btnTerminar;
     public JPanel pnlRegistro;

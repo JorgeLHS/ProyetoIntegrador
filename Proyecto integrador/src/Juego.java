@@ -27,6 +27,7 @@ public class Juego {
     private int num5;
 
     public Juego() {
+        //Genera los numeros random
         Random r = new Random();
         int numeros = r.nextInt(20) + 11;
         int numeros2 = r.nextInt(10) + 1;
@@ -48,7 +49,7 @@ public class Juego {
                 num3 = Integer.parseInt(txtNumero3.getText());
                 num4 = Integer.parseInt(txtNumero4.getText());
                 num5 = Integer.parseInt(txtNumero5.getText());
-
+                //Validación
                 if (num1 < num2 && num2 < num3 && num3 < num4 && num4 < num5) {
                     JOptionPane.showMessageDialog(null, "Felicidades!!!");
                     JOptionPane.showMessageDialog(null, "Felicidades lograste ordenar los números");

@@ -19,6 +19,7 @@ public class Myform {
     private JDialog dlgShowInfo;
 
 
+    // Crear los parametros para el Email y la contraseña
     private static final String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
     private static final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$";
 
@@ -62,7 +63,8 @@ public class Myform {
         btnIngresar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (txtCorreo.getText().length()!=0 && txtContraseña.getPassword().length !=0) {
+                //Validación de que los campos de texto no estén vacion
+                if (txtCorreo.getText().length() != 0 && txtContraseña.getPassword().length != 0) {
                     JFrame frame = new JFrame();
                     frame.setSize(800, 800);
                     frame.setLayout(new BorderLayout());
