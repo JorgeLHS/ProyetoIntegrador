@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Ordenamiento">
+  <grid id="27dc6" binding="pnlMain3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="747" height="1584"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="963d0">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14851225"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="9bc23" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="8" left="14" bottom="8" right="8"/>
+            <constraints/>
+            <properties>
+              <background color="-16748620"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="bfb32" class="javax.swing.JTextArea" binding="txtA_Seleccion">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16748620"/>
+                  <font name="JetBrains Mono" size="14"/>
+                  <foreground color="-16184824"/>
+                  <text value="La ordenación o clasificación de datos (sort, en inglés) es una operación consistente en disponer &#10;un conjunto —estructura— de datos en algún determinado orden con respecto a uno de los&#10;campos de los elementos del conjunto. Por ejemplo, cada elemento del conjunto de datos de una&#10;guía telefónica tiene un campo nombre, un campo dirección y un campo número de teléfono;&#10;la guía telefónica está dispuesta en orden alfabético de nombres. Los elementos numéricos se&#10;pueden ordenar en orden creciente o decreciente de acuerdo al valor numérico del elemento. En&#10;terminología de ordenación, el elemento por el cual está ordenado un conjunto de datos (o se está&#10;buscando) se denomina clave.&#10;&#10;Método de Selección: Considérese el algoritmo para ordenar un array a[] de enteros en orden &#10;ascendente, es decir, si el array a[] tiene n elementos, se trata de ordenar los valores &#10;del array de modo que a[0] sea el valor más pequeño, el valor almacenado en a[1] sea el &#10;siguiente más pequeño, y así hasta a[n-1] que ha de contener el elemento de mayor valor. El &#10;algoritmo se apoya en las pasadas que intercambian el elemento más pequeño, sucesivamente con el &#10;elemento de la lista, a[], que ocupa la posición igual al orden de pasada (hay que considerar &#10;el índice 0). La pasada inicial busca el elemento más pequeño de la lista y se intercambia con a[0], &#10;primer elemento de la lista.&#10;&#10;Ejemplo:&#10;public static void Seleccion(int[]matrix){&#10;        int i, j, k, p, buffer, limit = matrix.length-1;&#10;        for(k = 0; k &lt; limit; k++){&#10;            p = k;&#10;            for(i = k+1; i &lt; = limit; i++){&#10;                if(matrix[i] &lt; matrix[p]) p = i;&#10;                if(p != k){&#10;                    buffer = matrix[p];&#10;                    matrix[p] = matrix[k];&#10;                    matrix[k] = buffer;&#10;                }&#10;            }&#10;        }&#10;    }&#10;&#10;"/>
+                  <wrapStyleWord value="true"/>
+                </properties>
+              </component>
+              <component id="88861" class="javax.swing.JTextArea" binding="txtA_insercion">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16748620"/>
+                  <font name="JetBrains Mono" size="14"/>
+                  <foreground color="-16184824"/>
+                  <text value="Método de Inserción: El método de ordenación por inserción es similar al proceso típico de ordenar&#10;tarjetas de nombres (cartas de una baraja) por orden alfabético consistente en insertar un nombre &#10;en su posición correcta dentro de una lista que ya está ordenada.&#10;&#10;&#10;Ejemplo:&#10;public static void Insercion (int[] vector) {&#10;      for (int i=1; i &lt; vector.length; i++) {&#10;         int aux = vector[i];&#10;         int j;&#10;         for (j=i-1; j &gt; =0 &amp; vector[j] &gt; aux; j--){&#10;              vector[j+1] = vector[j];&#10;          }&#10;         vector[j+1] = aux;&#10;      }&#10;   }&#10;"/>
+                </properties>
+              </component>
+              <component id="247d3" class="javax.swing.JTextArea" binding="txtA_Burbuja">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16748620"/>
+                  <font name="JetBrains Mono" size="14"/>
+                  <foreground color="-16184824"/>
+                  <text value="Método Burbuja: El ordenamiento burbuja hace múltiples pasadas a lo largo de una lista. Compara los &#10;ítems adyacentes e intercambia los que no están en orden. Cada pasada a lo largo de la lista ubica &#10;el siguiente valor más grande en su lugar apropiado. En esencia, cada ítem “burbujea” hasta &#10;el lugar al que pertenece.&#10;&#10;Ejemplo:&#10;public static int[] MétodoBurbuja(int[] vector)&#10;    {&#10;        int TerminoA;&#10;        int[] VectorOrdenado;&#10;        for(int i = 1; i &lt; vector.length; i++)&#10;        {&#10;            for(int j = 0; j &lt; vector.length-i; j++)&#10;            {&#10;                if(vector[j] &gt; vector[j+1])&#10;                {&#10;                    TerminoA = vector[j];&#10;                    vector[j] = vector[j+1];&#10;                    vector[j+1] = TerminoA;&#10;                }&#10;            }&#10;        }&#10;        VectorOrdenado = vector;&#10;        return VectorOrdenado;&#10;    }&#10; System.out.println(&quot;Digite el vector&quot;);&#10;        int vector[] = {1,4,5,3,12,23,7,6};&#10;&#10;        int VectorOrdenado[] = MétodoBurbuja(vector);&#10;&#10;        for(int i = 0; i &lt; VectorOrdenado.length;i++)&#10;            System.out.println(VectorOrdenado[i]);&#10;"/>
+                </properties>
+              </component>
+              <component id="d7d93" class="javax.swing.JButton" binding="btnVerEjemplo">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-8407553"/>
+                  <font name="JetBrains Mono" size="12" style="1"/>
+                  <foreground color="-16184824"/>
+                  <text value="Practica"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
